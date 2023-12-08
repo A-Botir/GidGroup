@@ -414,6 +414,9 @@
             .catalog_image{
                 width: 958px;
                 height: 639px;
+                &--2{
+                    display: none;
+                }
             }
             .catalog_form{
                 @include dFlex( center, start);
@@ -485,7 +488,6 @@
             }
         }
     }
-
     .main_line{
         display: block;
         width: 9%;

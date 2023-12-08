@@ -35,6 +35,351 @@
         }
     }
 
+    .main{
+        padding: 26px 0 77px 0;
+        .achievements{
+            @include dFlex(center, start);
+            flex-wrap: wrap;
+            column-gap: 65px;
+            row-gap: 75px;
+            padding: 12px 66px 12px 26px;
+            .achievements__card{
+                width: 315px;
+                .achievements__title{
+                    font-size: 48px;
+                    margin-top: 13px;
+                }
+                .achievements__subtitle{
+                    font-size: 24px;
+                    margin-bottom: 13px;
+                }
+                .achievements__text{
+                    font-size: 14px;
+                    margin-left: 27px;
+                }
+            }
+        }
+        .under_section{
+            margin-bottom: 18px;
+            .section_undertitle{
+                font-size: 24px;
+                max-width: 328px;
+                text-transform: uppercase;
+            }
+        }
+        .pricing{
+            margin-top: 20px;
+            padding-left: 2em;
+            padding-right: 3em;
+            .pricing_left{
+                padding-right: 30px;
+                &__title{
+                    font-size: 18px;
+                    margin-bottom: 21px;
+                }
+                &__subtitle{
+                    font-size: 18px;
+                    margin-bottom: 36px;
+                }
+                &__btn{
+                    padding: 14px 40px;
+                    font-size: 18px;
+                }
+            }
+            .pricing_right{
+                padding: 0;
+                border-left: solid 1px #E0E0E0;
+                &__block{
+                    position: relative;
+                    width: 274px;
+                    height: 150px;
+                    margin-bottom: 15px;
+                    .pricing_right__img--element{
+                        width: 38px;
+                        height: 30px;
+                        top: 0;
+                        left: 62%;
+                    }
+                }
+                &__title{
+                    font-size: 18px;
+                    margin-bottom: 6px;
+                    margin-left: 34px;
+                }
+                &__item{
+                    font-size: 14px;
+                    margin-left: 35px;
+                }
+            }
+            .pricing_bott{
+                .pricing_bott__item{
+                    margin-left: 52px;
+                    padding: 12px 0 15px 35px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .services{
+            margin-top: 40px;
+            .service_card{
+                max-width: 397px;
+                &__img{
+                    width: 397px;
+                    height: 443px;
+                    margin-bottom: 23px;
+                }
+                &__title{
+                    font-size: 24px;
+                    margin-bottom: 7px;
+                    margin-left: 13px;
+                }
+                &__subtitle{
+                    font-size: 14px;
+                    margin-right: 130px;
+                    margin-bottom: 36px;
+                    margin-left: 13px;
+                }
+            }
+        }
+        .section_backgroung{
+            margin-bottom: 75px;
+            .projects{
+                margin-top: 18px;
+                padding-bottom: 63px;
+                .projects_card_container{
+                    max-width: 764px;
+                    margin-bottom: 40px;
+                    .projects_card{
+                        max-width: 387px;
+                        position: relative;
+                        .projects_card__block{
+                            width: 387px;
+                            height: 455px;
+                            &--hov{
+                                z-index: 10;
+                                .projects_card__button{
+                                    margin-left: 20%; 
+                                    margin-top: 50%;
+                                    padding: 20px 40px;
+                                    font-size: 18px;
+                                }
+                            }
+                        }
+                        .projects_card__text{
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            z-index: 5;
+                            @include dFlex(center, start);
+                            flex-direction: column;
+                            gap: 6px;
+                            margin-left: 20%;
+                            .projects_card__title{
+                                color: #ffffff;
+                                font-size: 18px;
+                            }
+                            .projects_card__subtitle{
+                                color: var(--Gray-3, #ffffff);
+                                font-size: 18px;
+                            }
+                            .projects_card__area{
+                                color: var(--Gray-1, #ffffff);
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .card_line{
+                        top: 60%;
+                    }
+                }
+                .project_link{
+                    margin-left: 35%;
+                }
+            }
+        }
+        .instructions{
+            .instructions_card_container{
+                .instructions_card{
+                    @include dFlex( left, start);
+                    gap: 9px;
+                    .instructions_card__num{
+                        font-size: 48px;
+                    }
+                    .instructions_card__content{
+                        .instructions_card__image{
+                            margin-bottom: 32px;
+                        }
+                        .instructions_card__title{
+                            padding: 4px 7px;
+                            font-size: 24px;
+                            margin-bottom: 18px;
+                        }
+                        .instructions_card__subtitle{
+                            font-size: 18px;
+                            margin-bottom: 10px;
+                        }
+                        .instructions_card__execpt{
+                            font-size: 14px;
+                            padding:0;
+                        }
+                    }
+                    &--border{
+                        border-bottom: none;
+                    }
+                }
+                .instructions_link{
+                    @include dFlex(left, center);
+                    margin-left: 0;
+                    margin-bottom: 28px;
+                    .instructions_btn{
+                        padding: 23px 74px;
+                        font-size: 24px;
+                        .instructions_btn__img{
+                            width: 74px;
+                        }
+                    }
+                }
+            }
+        }
+        .back_section{
+            background-image: url("/assets/image/back/armchair.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            padding: 79px 0 145px 0;
+            .back_section__content{
+                .back_section__title{
+                    margin-right: 150px;
+                    font-size: 36px;
+                    margin-bottom: 73px;
+                }
+                .back_section_list{
+                    .back_section_item{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+        .instagram{
+            padding: 46px 0 38px 0;
+            .instagram_logo{
+                width: 185px;
+                height: 52px;
+                margin-bottom: 80px;
+            }
+            .instagram_card__container{
+                margin: auto;
+                gap: 20px;
+                .instagram_card{
+                    padding: 0;
+                    max-width: 386px;
+                    max-height: 386px;
+                    min-height: 385.9px;
+                }
+            }
+        }
+        .catalog{
+            margin: auto;
+            margin-top: 14px;
+            .catalog_content{
+                @include dFlex(center, start);
+                flex-direction: column;
+                gap: 51px;
+                .catalog_image{
+                    display: none;
+                    width: 794px;
+                    height: 363px;
+                    &--2{
+                        display: block;
+                    }
+                }
+                .catalog_form{
+                    @include dFlex( center, start);
+                    flex-direction: column;
+                    max-width: 477px;
+                    .catalog_form__title{
+                        font-size: 24px;
+                        margin-bottom: 21px;
+                    }
+                    .catalog_form__subtitle{
+                        font-size: 18px;
+                        margin-bottom: 27px;
+                        width: 425px;
+                    }
+                    .catalog_form__input{
+                        width: 99%;
+                        padding: 24px;
+                        font-size: 14px;
+                        margin-bottom: 18px;
+                        &::placeholder{
+                            color: #4F4F4F;
+                            font-weight: 100;
+                            font-size: 14px;
+                        }
+                    }
+                    .catalog_form__label{
+                        color: var(--Gray-1, #333);
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 146.187%;
+                        cursor: pointer;
+                        margin-bottom: 72px;
+                        #checker{
+                            width: 17px;
+                            height: 17px;
+                            margin-right: 10px;
+                            vertical-align: middle;
+                        }
+    
+                    }
+                    .catalog_form__btn{
+                        padding: 22px 112px;
+                        font-size: 18px;
+                    }
+    
+                }
+            }
+        }
+        .main_line{
+            width: 12%;
+            height: 5px;
+            background-color: #000;
+        }
+        .border_line{
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: #BDBDBD;
+            &--pricing{
+                margin-bottom: 85px;
+            }
+            &--services{
+                margin-bottom: 49px;
+            }
+            &--back{
+                margin-bottom: 47px;
+            }
+            &--form{
+                margin-bottom: 80px;
+            }
+        }
+        .square{
+            width: 9px;
+            height: 9px;
+            &--black{
+                margin: 10px;
+            }
+            &--project{
+                margin-top: 7px;
+                margin-right: 5px;
+            }
+            &--grey{
+                background-color: #4F4F4F;
+                margin-bottom: 7px;
+            }
+        }
+    }
+
     .footer{
         margin-top: 10px;
         background-image: url("/assets/image/back/footer background tablet.svg"), url("/assets/image/back/footer\ background\ element.svg");
