@@ -1,0 +1,198 @@
+@media (max-width: 991.98px) {
+    // Tablet
+    .page_container{
+        max-width: 834px;
+    }
+
+    .header{
+        .header_container {
+            padding-bottom: 56px;
+            .header__navbar {
+                margin-bottom: 458px;
+            }
+            .header__logo{
+                width: 184px;
+                height: 76px;
+            }
+            .header__content{
+                .header__title{
+                    font-size: 48px;
+                    margin-bottom: 199px
+                }
+                .header__group{
+                    gap: 27px;
+                    margin-bottom: 199px;
+                    .header__btn{
+                        width: 246px;
+                        height: 61px;
+                        font-size: 18px;
+                    }
+                }
+                .header__arrow{
+                    padding: 12px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        margin-top: 10px;
+        background-image: url("/assets/image/back/footer background tablet.svg"), url("/assets/image/back/footer\ background\ element.svg");
+        background-position: left bottom, calc(100% - 50%) 0;
+        background-size: 75%, 86px 92px;
+        &_container{
+            padding-top: 72px;
+            padding-bottom: 4px;
+            .footer__link{
+                max-width: 95px;
+                max-height: 30px;
+                margin: 0 0 50px auto;
+                .footer__btn{
+                    padding: 0 7px;
+                    font-size: 14px;
+                    .footer__arrow{
+                        width: 10px;
+                    }
+                }
+            }
+            .footer_navbar{
+                margin-right: 30px;
+                margin-bottom: 60px;
+                .footer_navbar__top{
+                    margin-bottom: 17px;
+                    @include dFlex(space-between, end);
+                    .footer_navbar__group{
+                        gap: 29px;
+                        .footer_navbar__media{
+                            width: 17px;
+                            height: 17px;
+                        }
+                    }
+                    
+                }
+                .footer_navbar__bott{
+                    gap: 36px;
+                    .footer_navbar__block{
+                        .footer_navbar__title{
+                            font-size: 14px;
+                            margin-bottom: 12px;
+                        }
+                        .footer_navbar__list{
+                            line-height: 150%;
+                            .footer_navbar__item{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+    
+                }
+            }
+            .footer_copy{
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    // Mobile
+    .page_container{
+        max-width: 375;
+    }
+
+    .header{
+        background-position: right top;
+        &::before{
+            height: 138px;
+            background: rgba(255, 255, 255, 0.2);
+            z-index: 1;
+        }
+        .header_container {
+            position: relative;
+            padding: 0 0 43px 0;
+            max-width: 375px;
+            .header__navbar {
+                @include dFlex( space-between, center);
+                padding: 59px 0;
+                margin-bottom: 184px;
+            }
+            .header__logo{
+                left: 35%;
+                top: 160px;
+            }
+            .header__content{
+                .header__title{
+                    font-size: 36px;
+                    margin-bottom: 125px
+                }
+                .header__group{
+                    @include dFlex;
+                    flex-direction: column;
+                    gap: 26px;
+                    margin-bottom: 39px;
+                    .header__btn{
+                        width: 275px;
+                        height: 61px;
+                        font-size: 18px;
+                    }
+                }
+                .header__arrow{
+                    padding: 10px;
+                    height: 55px;
+                }
+            }
+        }
+    }
+
+    .footer{
+        margin-top: 5px;
+        background-image: url("/assets/image/back/footer\ background\ mobile.svg"), url("/assets/image/back/footer\ background\ element.svg");
+        background-size: 107%, 51px 55px;
+        background-position: left bottom, calc(100% - 25%) 0;
+        &_container{
+            padding-top: 95px;
+            padding-bottom: 25px;
+            .footer__link{
+                display: none;
+            }
+            .footer_navbar{
+                padding-top: 20px;
+                margin: 0 0 27px 0;
+                .footer_navbar__top{
+                    margin-bottom: 17px;
+                    @include dFlex(left, center);
+                    .footer_navbar__group{
+                        display: none
+                    }
+                }
+                .footer_navbar__bott{
+                    gap: 0;
+                    .footer_navbar__block{
+                        display: none;
+                        &--mob{
+                            display: block;
+                        }
+                        .footer_navbar__title{
+                            font-size: 14px;
+                            margin-bottom: 6px;
+                            text-align: center;
+                        }
+                        .footer_navbar__list{
+                            text-align: center;
+                            line-height: 200%;
+                            .footer_navbar__item{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+    
+                }
+            }
+            .footer_copy{
+                color: var(--Gray-4, #BDBDBD);
+                text-align: left;
+                font-size: 12px;
+            }
+        }
+    }
+}

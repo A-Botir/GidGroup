@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+.page_container {
+  max-width: 1920px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  padding: 0 ;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6, p{
+  margin: 0;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+img {
+  flex-shrink: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}

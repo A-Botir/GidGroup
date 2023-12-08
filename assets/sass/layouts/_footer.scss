@@ -1,0 +1,79 @@
+.footer{
+    margin-top: 22px;
+    background-image: url("/assets/image/back/footer\ background.svg"), url("/assets/image/back/footer\ background\ element.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, center top;
+    background-size: 76%, 10%;
+    width: 100%;
+    &_container{
+        padding-top: 156px;
+        padding-bottom: 31px;
+        .footer__link{
+            display: block;
+            max-width: 185px;
+            margin: 0 0 235px auto;
+            border: 1px solid #000;
+            transform: rotate(-90deg);
+            @include dFlex(left, center);
+            .footer__btn{
+                width: 100%;
+                background: rgba(196, 196, 196, 0.00);
+                padding: 13px 24px;
+                color: #000;
+                font-size: 24px;
+                font-weight: 300;
+                line-height: normal;
+                border: none;
+                .footer__arrow{
+                    margin-left: 15px;
+                    width: 16px;
+                    transform: rotate(90deg);
+                }
+            }
+        }
+        .footer_navbar{
+            margin: 0 60px 230px 20px;
+            .footer_navbar__top{
+                margin-bottom: 20px;
+                @include dFlex(space-between, center);
+                .footer_navbar__logo{
+                    width: 184px;
+                    height: 76px;
+                }
+                .footer_navbar__group{
+                    @include dFlex;
+                    gap: 68px;
+                }
+            }
+            .footer_navbar__bott{
+                @include dFlex( left, start);
+                gap: 160px;
+                .footer_navbar__block{
+                    .footer_navbar__title{
+                        color: #FAFF09;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 146.187%;
+                        margin-bottom: 41px;
+                    }
+                    .footer_navbar__list{
+                        line-height: 250%;
+                        .footer_navbar__item{
+                            color: var(--Gray-6, #F2F2F2);
+                            font-size: 18px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+
+            }
+        }
+        .footer_copy{
+            color: #000;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 146.187%; /* 20.466px */
+        }
+    }
+}
