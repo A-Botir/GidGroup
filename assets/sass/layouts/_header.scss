@@ -18,10 +18,17 @@
     .header_container {
         position: relative;
         padding-bottom: 53px;
+        width: 100%;
         .header__navbar {
-            @include dFlex( space-between, center);
-            padding: 36px 0;
-            margin-bottom: 347px;
+            position: absolute;
+            z-index: 2;
+            top: 0;
+            left: 0;
+            padding: 36px 40px 36px 30px;
+            width: 100%;
+            .header__navbar_flex{
+                @include dFlex(space-between, center);
+            }
         }
         .header__logo{
             position: absolute;
@@ -32,6 +39,7 @@
         .header__content{
             @include dFlex;
             flex-direction: column;
+            padding-top: 347px;
             .header__title{
                 color: var(--Gray-6, #F2F2F2);
                 text-align: center;

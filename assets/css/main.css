@@ -107,13 +107,20 @@ button {
 .header .header_container {
   position: relative;
   padding-bottom: 53px;
+  width: 100%;
 }
 .header .header_container .header__navbar {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  padding: 36px 40px 36px 30px;
+  width: 100%;
+}
+.header .header_container .header__navbar .header__navbar_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 36px 0;
-  margin-bottom: 347px;
 }
 .header .header_container .header__logo {
   position: absolute;
@@ -126,6 +133,7 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 347px;
 }
 .header .header_container .header__content .header__title {
   color: var(--Gray-6, #F2F2F2);
@@ -535,6 +543,7 @@ button {
   justify-content: left;
   align-items: start;
   gap: 20px;
+  max-width: 471px;
 }
 .main .instructions .instructions_card_container .instructions_card .instructions_card__num {
   margin-top: 80px;
@@ -806,12 +815,12 @@ button {
   .header .header_container {
     padding-bottom: 56px;
   }
-  .header .header_container .header__navbar {
-    margin-bottom: 458px;
-  }
   .header .header_container .header__logo {
     width: 184px;
     height: 76px;
+  }
+  .header .header_container .header__content {
+    padding-top: 458px;
   }
   .header .header_container .header__content .header__title {
     font-size: 48px;
@@ -841,6 +850,7 @@ button {
          column-gap: 65px;
     row-gap: 75px;
     padding: 12px 66px 12px 26px;
+    margin-bottom: 66px;
   }
   .main .achievements .achievements__card {
     width: 315px;
@@ -1281,6 +1291,9 @@ button {
   .header .header_container .header__content .header__arrow {
     padding: 10px;
     height: 55px;
+  }
+  .main {
+    width: 100%;
   }
   .footer {
     margin-top: 5px;

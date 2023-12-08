@@ -7,14 +7,12 @@
     .header{
         .header_container {
             padding-bottom: 56px;
-            .header__navbar {
-                margin-bottom: 458px;
-            }
             .header__logo{
                 width: 184px;
                 height: 76px;
             }
             .header__content{
+                padding-top: 458px;
                 .header__title{
                     font-size: 48px;
                     margin-bottom: 199px
@@ -43,6 +41,7 @@
             column-gap: 65px;
             row-gap: 75px;
             padding: 12px 66px 12px 26px;
+            margin-bottom: 66px;
             .achievements__card{
                 width: 315px;
                 .achievements__title{
@@ -487,6 +486,10 @@
                 }
             }
         }
+    }
+
+    .main{
+       width: 100%; 
     }
 
     .footer{
