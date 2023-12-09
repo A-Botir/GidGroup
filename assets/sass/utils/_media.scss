@@ -1,12 +1,12 @@
 @media (max-width: 991.98px) {
     // Tablet
-    .page_container{
-        max-width: 834px;
-    }
-
     .header{
+        width: 100%;
         .header_container {
             padding-bottom: 56px;
+            .header__navbar {
+                padding: 36px 37px 36px 50px;
+            }
             .header__logo{
                 width: 184px;
                 height: 76px;
@@ -71,28 +71,29 @@
             padding-left: 2em;
             padding-right: 3em;
             .pricing_left{
-                padding-right: 30px;
+                padding-right: 70px;
                 &__title{
                     font-size: 18px;
                     margin-bottom: 21px;
                 }
                 &__subtitle{
                     font-size: 18px;
-                    margin-bottom: 36px;
                 }
                 &__btn{
+                    margin-top: 36px;
                     padding: 14px 40px;
                     font-size: 18px;
                 }
             }
             .pricing_right{
                 padding: 0;
+                padding-bottom: 15px;
                 border-left: solid 1px #E0E0E0;
+                max-width: 274px;
                 &__block{
                     position: relative;
-                    width: 274px;
+                    width: 100%;
                     height: 150px;
-                    margin-bottom: 15px;
                     .pricing_right__img--element{
                         width: 38px;
                         height: 30px;
@@ -107,23 +108,28 @@
                 }
                 &__item{
                     font-size: 14px;
-                    margin-left: 35px;
+                    padding-left: 35px;
                 }
-            }
-            .pricing_bott{
-                .pricing_bott__item{
-                    margin-left: 52px;
-                    padding: 12px 0 15px 35px;
-                    font-size: 14px;
+                &__item--border{
+                    border-bottom: solid 1px #E0E0E0;
+                    margin-bottom: 12px;
+                }
+                &--element{
+                    position: relative;
+                }
+                &__line{
+                    left: -36px;
+                    top: 53px;
+                    width: 35px;
                 }
             }
         }
         .services{
             margin-top: 40px;
             .service_card{
-                max-width: 397px;
+                max-width: 396px;
                 &__img{
-                    width: 397px;
+                    width: 100%;
                     height: 443px;
                     margin-bottom: 23px;
                 }
@@ -340,7 +346,7 @@
             }
         }
         .main_line{
-            width: 12%;
+            width: 9%;
             height: 5px;
             background-color: #000;
         }
@@ -440,10 +446,6 @@
 
 @media (max-width: 575.98px){
     // Mobile
-    .page_container{
-        max-width: 375;
-    }
-
     .header{
         background-position: right top;
         &::before{

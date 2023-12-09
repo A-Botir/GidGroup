@@ -1,3 +1,9 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -271,6 +277,7 @@ button {
   align-items: start;
   padding: 37px 45px 41px 54px;
   background-color: #F2F2F2;
+  margin-bottom: 92px;
 }
 .main .achievements .achievements__card {
   box-sizing: border-box;
@@ -314,7 +321,9 @@ button {
   padding-right: 8em;
 }
 .main .pricing .pricing_left {
+  padding: 0;
   padding-right: 28px;
+  padding-left: 14px;
 }
 .main .pricing .pricing_left__title {
   color: #000;
@@ -328,11 +337,11 @@ button {
   font-size: 36px;
   font-weight: 300;
   line-height: 147.187%;
-  margin-bottom: 155px;
 }
 .main .pricing .pricing_left__btn {
+  margin-top: 47px;
   padding: 30px 100px;
-  border: 1px solid #000;
+  border: solid 1px #000;
   background: #000;
   color: #FFF;
   font-size: 36px;
@@ -346,13 +355,13 @@ button {
 }
 .main .pricing .pricing_right {
   padding: 0;
+  padding-bottom: 34px;
   border-left: solid 1px #E0E0E0;
 }
 .main .pricing .pricing_right__block {
   position: relative;
   width: 607px;
   height: 333px;
-  margin-bottom: 34px;
 }
 .main .pricing .pricing_right__block .pricing_right__img--element {
   position: absolute;
@@ -372,25 +381,29 @@ button {
   font-size: 36px;
   font-weight: 300;
   line-height: 147.187%;
-  margin-left: 79px;
+  padding-left: 79px;
 }
-.main .pricing .pricing_bott {
-  border-top: solid 1px #E0E0E0;
+.main .pricing .pricing_right__item--border {
+  border-bottom: solid 1px #E0E0E0;
+  margin-bottom: 27px;
 }
-.main .pricing .pricing_bott .pricing_bott__item {
-  border-left: solid 1px #E0E0E0;
-  margin-left: 119px;
-  padding: 27px 0 34px 79px;
-  color: var(--Gray-1, #333);
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 147.187%;
+.main .pricing .pricing_right--element {
+  position: relative;
+}
+.main .pricing .pricing_right__line {
+  position: absolute;
+  left: -77px;
+  top: 178px;
+  display: block;
+  height: 1px;
+  width: 76px;
+  background-color: #E0E0E0;
 }
 .main .services {
   margin-top: 52px;
 }
 .main .services .service_card {
-  max-width: 438px;
+  max-width: 437px;
   padding: 0;
 }
 .main .services .service_card--border {
@@ -400,7 +413,7 @@ button {
   border-left: solid 1px #E0E0E0;
 }
 .main .services .service_card__img {
-  width: 437px;
+  width: 100%;
   height: 487px;
   margin-bottom: 42px;
 }
@@ -429,7 +442,7 @@ button {
 .main .section_backgroung .projects {
   margin-top: 10px;
   padding-bottom: 53px;
-  border-bottom: 1px solid #BDBDBD;
+  border-bottom: solid 1px #BDBDBD;
 }
 .main .section_backgroung .projects .projects_card_container {
   margin: auto;
@@ -467,7 +480,7 @@ button {
   margin-left: 20%;
   margin-top: 50%;
   padding: 24px 64px;
-  border: 1px solid #FFF;
+  border: solid 1px #FFF;
   background: rgba(196, 196, 196, 0);
   color: #FFF;
   text-align: center;
@@ -503,7 +516,7 @@ button {
   line-height: normal;
 }
 .main .section_backgroung .projects .projects_card_container .projects_card--border {
-  border-right: 1px solid #E0E0E0;
+  border-right: solid 1px #E0E0E0;
 }
 .main .section_backgroung .projects .projects_card_container .card_line {
   position: absolute;
@@ -518,7 +531,7 @@ button {
 }
 .main .section_backgroung .projects .project_link .project_btn {
   padding: 19px 45px;
-  border: 1px solid #000;
+  border: solid 1px #000;
   background-color: #000;
   color: var(--Gray-6, #F2F2F2);
   font-size: 24px;
@@ -605,7 +618,7 @@ button {
 }
 .main .instructions .instructions_card_container .instructions_link .instructions_btn {
   padding: 35px 108px;
-  border: 1px solid #000;
+  border: solid 1px #000;
   background: rgba(196, 196, 196, 0);
   color: #000;
   text-align: center;
@@ -719,7 +732,7 @@ button {
   font-size: 24px;
   font-weight: 400;
   line-height: normal;
-  border: 1px solid #000;
+  border: solid 1px #000;
   background: rgba(196, 196, 196, 0);
   margin-bottom: 16px;
 }
@@ -749,7 +762,7 @@ button {
 }
 .main .catalog .catalog_content .catalog_form .catalog_form__btn {
   padding: 25px 85px;
-  border: 1px solid #000;
+  border: solid 1px #000;
   background: #000;
   color: var(--Gray-6, #F2F2F2);
   text-align: center;
@@ -809,11 +822,14 @@ button {
 }
 
 @media (max-width: 991.98px) {
-  .page_container {
-    max-width: 834px;
+  .header {
+    width: 100%;
   }
   .header .header_container {
     padding-bottom: 56px;
+  }
+  .header .header_container .header__navbar {
+    padding: 36px 37px 36px 50px;
   }
   .header .header_container .header__logo {
     width: 184px;
@@ -881,7 +897,7 @@ button {
     padding-right: 3em;
   }
   .main .pricing .pricing_left {
-    padding-right: 30px;
+    padding-right: 70px;
   }
   .main .pricing .pricing_left__title {
     font-size: 18px;
@@ -889,21 +905,22 @@ button {
   }
   .main .pricing .pricing_left__subtitle {
     font-size: 18px;
-    margin-bottom: 36px;
   }
   .main .pricing .pricing_left__btn {
+    margin-top: 36px;
     padding: 14px 40px;
     font-size: 18px;
   }
   .main .pricing .pricing_right {
     padding: 0;
+    padding-bottom: 15px;
     border-left: solid 1px #E0E0E0;
+    max-width: 274px;
   }
   .main .pricing .pricing_right__block {
     position: relative;
-    width: 274px;
+    width: 100%;
     height: 150px;
-    margin-bottom: 15px;
   }
   .main .pricing .pricing_right__block .pricing_right__img--element {
     width: 38px;
@@ -918,21 +935,28 @@ button {
   }
   .main .pricing .pricing_right__item {
     font-size: 14px;
-    margin-left: 35px;
+    padding-left: 35px;
   }
-  .main .pricing .pricing_bott .pricing_bott__item {
-    margin-left: 52px;
-    padding: 12px 0 15px 35px;
-    font-size: 14px;
+  .main .pricing .pricing_right__item--border {
+    border-bottom: solid 1px #E0E0E0;
+    margin-bottom: 12px;
+  }
+  .main .pricing .pricing_right--element {
+    position: relative;
+  }
+  .main .pricing .pricing_right__line {
+    left: -36px;
+    top: 53px;
+    width: 35px;
   }
   .main .services {
     margin-top: 40px;
   }
   .main .services .service_card {
-    max-width: 397px;
+    max-width: 396px;
   }
   .main .services .service_card__img {
-    width: 397px;
+    width: 100%;
     height: 443px;
     margin-bottom: 23px;
   }
@@ -1150,7 +1174,7 @@ button {
     font-size: 18px;
   }
   .main .main_line {
-    width: 12%;
+    width: 9%;
     height: 5px;
     background-color: #000;
   }
@@ -1244,9 +1268,6 @@ button {
   }
 }
 @media (max-width: 575.98px) {
-  .page_container {
-    max-width: 375;
-  }
   .header {
     background-position: right top;
   }
