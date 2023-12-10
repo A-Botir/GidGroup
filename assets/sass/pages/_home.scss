@@ -541,5 +541,15 @@
             background-color: #4F4F4F;
             margin-bottom: 7px;
         }
+        &--mob{
+            display: none;
+            margin: auto;
+        }
+        &--mob2{
+            display: block;
+            margin: auto;
+            background-color: #4F4F4F;
+            margin-bottom: 16px;
+        }
     }
 }

@@ -817,6 +817,16 @@ button {
   background-color: #4F4F4F;
   margin-bottom: 7px;
 }
+.main .square--mob {
+  display: none;
+  margin: auto;
+}
+.main .square--mob2 {
+  display: block;
+  margin: auto;
+  background-color: #4F4F4F;
+  margin-bottom: 16px;
+}
 
 @media (max-width: 991.98px) {
   .header {
@@ -1263,15 +1273,16 @@ button {
     max-width: 375px;
   }
   .header .header_container .header__navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 59px 0;
-    margin-bottom: 184px;
+    position: absolute;
+    z-index: 2;
+    padding: 59px 24px;
   }
   .header .header_container .header__logo {
     left: 35%;
     top: 160px;
+  }
+  .header .header_container .header__content {
+    padding-top: 331px;
   }
   .header .header_container .header__content .header__title {
     font-size: 36px;
@@ -1293,9 +1304,487 @@ button {
   .header .header_container .header__content .header__arrow {
     padding: 10px;
     height: 55px;
+    width: 1px;
   }
   .main {
+    padding: 12px 0 118px 0;
+  }
+  .main .achievements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 37px;
+    padding: 12px 0 13px 0;
+    background-color: #F9F9F9;
+    margin-bottom: 56px;
+  }
+  .main .achievements .achievements__card {
+    max-width: 355px;
+    padding: 0 47px;
+  }
+  .main .achievements .achievements__card .achievements__title {
+    text-align: center;
+    font-size: 48px;
+    margin: 0 0 7px 0;
+  }
+  .main .achievements .achievements__card .achievements__subtitle {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .main .achievements .achievements__card .achievements__subtitle .square--black {
+    display: none;
+  }
+  .main .achievements .achievements__card .achievements__text {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 18px 0;
+  }
+  .main .under_section {
+    margin-bottom: 14px;
+  }
+  .main .under_section .section_undertitle {
+    text-align: center;
+    font-size: 24px;
+    max-width: 333px;
+  }
+  .main .pricing {
+    margin-top: 27px;
+    margin-bottom: 109px;
+    padding: 0;
+  }
+  .main .pricing .pricing_left {
+    padding: 0;
+    padding: 0 14px;
+  }
+  .main .pricing .pricing_left__title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  .main .pricing .pricing_left__subtitle {
+    font-size: 18px;
+    text-align: center;
+  }
+  .main .pricing .pricing_left__btn {
+    margin: 0;
+    padding: 15px 39px;
+    font-size: 18px;
+  }
+  .main .pricing .pricing_left__link {
+    text-align: center;
+    margin: auto;
+    margin-left: 18%;
+  }
+  .main .pricing .pricing_right {
+    padding: 0;
+    border: none;
+  }
+  .main .pricing .pricing_right__block {
+    width: 274px;
+    height: 150px;
+    margin-top: 40px;
+  }
+  .main .pricing .pricing_right__block .pricing_right__img--element {
+    position: absolute;
+    top: -5px;
+    left: 62%;
+  }
+  .main .pricing .pricing_right__title {
+    font-size: 18px;
+    margin: 0;
+    padding: 0 0 7px 35px;
+  }
+  .main .pricing .pricing_right__item {
+    font-size: 14px;
+    padding-left: 36px;
+  }
+  .main .pricing .pricing_right__item--border {
+    border-bottom: solid 1px #E0E0E0;
+  }
+  .main .pricing .pricing_right--element {
+    position: relative;
+    border-left: solid 1px #E0E0E0;
+    margin: 27px 0 60px 34px;
+  }
+  .main .pricing .pricing_right__line {
+    left: -35px;
+    top: 75px;
+    width: 34px;
+  }
+  .main .services {
+    margin-top: 59px;
+    margin-bottom: 44px;
+    padding: 0;
+  }
+  .main .services .service_card {
+    max-width: 100%;
+    padding: 0;
+  }
+  .main .services .service_card--border {
+    border: none;
+  }
+  .main .services .service_card--border1 {
+    border: none;
+  }
+  .main .services .service_card__img {
     width: 100%;
+    height: 409px;
+    margin-bottom: 16px;
+  }
+  .main .services .service_card__title {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+    text-align: center;
+  }
+  .main .services .service_card__subtitle {
+    font-size: 14px;
+    margin: 0 0 16px 0;
+    text-align: center;
+    padding: 0 40px;
+  }
+  .main .section_backgroung {
+    background: none;
+    margin-bottom: 78px;
+  }
+  .main .section_backgroung .projects {
+    margin-top: 29px;
+    padding: none;
+    border: none;
+  }
+  .main .section_backgroung .projects .projects_card_container {
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 100%;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card {
+    position: relative;
+    max-width: 100%;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card--mb {
+    display: none;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__block {
+    width: 100%;
+    height: 409px;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__block--hov {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25);
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__block--hov .projects_card__button {
+    margin-left: 20%;
+    margin-top: 43%;
+    padding: 18px 50px;
+    font-size: 18px;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__text {
+    position: absolute;
+    bottom: 28px;
+    left: 24px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__text .projects_card__title {
+    color: #FFF;
+    font-size: 18px;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__text .projects_card__subtitle {
+    color: #FFF;
+    font-size: 18px;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card .projects_card__text .projects_card__area {
+    color: #FFF;
+    font-size: 18px;
+  }
+  .main .section_backgroung .projects .projects_card_container .projects_card--border {
+    border: none;
+  }
+  .main .section_backgroung .projects .projects_card_container .card_line {
+    display: none;
+  }
+  .main .section_backgroung .projects .project_link {
+    margin-left: 12.5%;
+  }
+  .main .section_backgroung .projects .project_link .project_btn {
+    padding: 22px 61px;
+  }
+  .main .section_backgroung .projects .project_link .project_btn__img {
+    width: 17px;
+    height: 17px;
+    margin-right: 25px;
+  }
+  .main .instructions .instructions_card_container {
+    margin: auto;
+  }
+  .main .instructions .instructions_card_container .instructions_card {
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    gap: 20px;
+    max-width: 471px;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__num {
+    margin-top: 80px;
+    color: #000;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 146.687%;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__content .instructions_card__image {
+    max-width: 61px;
+    max-height: 58px;
+    margin-bottom: 29px;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__content .instructions_card__title {
+    padding: 7px 12px;
+    background-color: #FAFF09;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 19px;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__content .instructions_card__subtitle {
+    color: var(--Gray-2, #4F4F4F);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 147.687%;
+    margin-bottom: 24px;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__content .instructions_card__execpt {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 147.687%;
+    text-decoration-line: underline;
+    padding-bottom: 20px;
+    padding-right: 16px;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__content .instructions_card__execpt--border {
+    border-right: 3px dashed #000;
+  }
+  .main .instructions .instructions_card_container .instructions_card .instructions_card__content .instructions_card__execpt--img {
+    padding: 7px 5px;
+    background-color: #FAFF09;
+    border-radius: 50%;
+    margin-right: 6px;
+    margin-bottom: 3px;
+  }
+  .main .instructions .instructions_card_container .instructions_card--border {
+    border-bottom: 3px dashed #000;
+    padding-bottom: 20px;
+  }
+  .main .instructions .instructions_card_container .instructions_link {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 85px;
+    margin-bottom: 28px;
+  }
+  .main .instructions .instructions_card_container .instructions_link .instructions_btn {
+    padding: 35px 108px;
+    border: solid 1px #000;
+    background: rgba(196, 196, 196, 0);
+    color: #000;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: normal;
+    transition: all 0.5s ease;
+  }
+  .main .instructions .instructions_card_container .instructions_link .instructions_btn .instructions_btn__img {
+    width: 115px;
+    margin-left: 30px;
+  }
+  .main .instructions .instructions_card_container .instructions_link .instructions_btn:hover {
+    opacity: 0.8;
+  }
+  .main .back_section {
+    background-image: url("/assets/image/back/armchair.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 196px 0 224px 0;
+  }
+  .main .back_section .back_section__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main .back_section .back_section__content .back_section__title {
+    margin-right: 550px;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 146.687%;
+    margin-bottom: 106px;
+  }
+  .main .back_section .back_section__content .back_section_list {
+    line-height: 146.687%;
+  }
+  .main .back_section .back_section__content .back_section_list .back_section_item {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 146.687%;
+  }
+  .main .instagram {
+    padding: 92px 0 50px 0;
+  }
+  .main .instagram .instagram_logo {
+    width: 255px;
+    height: 72px;
+    margin-bottom: 30px;
+  }
+  .main .instagram .instagram_card__container {
+    margin: auto;
+  }
+  .main .instagram .instagram_card__container .instagram_card {
+    max-width: 417px;
+    max-height: 417px;
+    min-height: 416.9px;
+  }
+  .main .instagram .instagram_card__container .instagram_card .instagram_card__image {
+    width: 100%;
+    height: 100%;
+  }
+  .main .catalog {
+    margin: auto;
+    margin-top: 14px;
+  }
+  .main .catalog .catalog_content .catalog_left {
+    padding: 0;
+  }
+  .main .catalog .catalog_content .catalog_left .catalog_image {
+    width: 100%;
+    height: 640px;
+  }
+  .main .catalog .catalog_content .catalog_right {
+    padding: 0;
+    padding-left: 107px;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__title {
+    color: #000;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 146.687%;
+    margin-bottom: 41px;
+    width: 75%;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__subtitle {
+    color: #4F4F4F;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 146.687%;
+    margin-bottom: 86px;
+    width: 70%;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__input {
+    max-width: 90%;
+    width: 100%;
+    padding: 25px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    border: solid 1px #000;
+    background: rgba(196, 196, 196, 0);
+    margin-bottom: 16px;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__input::-moz-placeholder {
+    color: #4F4F4F;
+    font-weight: 100px;
+    font-size: 24px;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__input::placeholder {
+    color: #4F4F4F;
+    font-weight: 100px;
+    font-size: 24px;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__label {
+    width: 90%;
+    color: var(--Gray-1, #333);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 146.187%;
+    cursor: pointer;
+    margin-bottom: 72px;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__label #checker {
+    width: 17px;
+    height: 17px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__btn {
+    padding: 25px 85px;
+    border: solid 1px #000;
+    background: #000;
+    color: var(--Gray-6, #F2F2F2);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: normal;
+    transition: all 0.5s ease;
+  }
+  .main .catalog .catalog_content .catalog_right .catalog_form .catalog_form__btn:hover {
+    background: #FFF;
+    color: #000;
+  }
+  .main .main_line {
+    display: block;
+    width: 16%;
+    height: 5px;
+    background-color: #000;
+  }
+  .main .border_line {
+    display: none;
+  }
+  .main .square {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    vertical-align: text-top;
+  }
+  .main .square--white {
+    background-color: #FFF;
+  }
+  .main .square--black {
+    margin: 2px;
+  }
+  .main .square--project {
+    margin-top: 5px;
+    margin-right: 5px;
+  }
+  .main .square--grey {
+    display: none;
+  }
+  .main .square--mob {
+    display: block;
+  }
+  .main .square--mob2 {
+    display: block;
   }
   .footer {
     margin-top: 5px;
