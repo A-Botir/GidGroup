@@ -284,7 +284,6 @@
             .instructions_card{
                 @include dFlex(left, start);
                 gap: 20px;
-                max-width: 471px;
                 .instructions_card__num{
                     margin-top: 80px;
                     color: #000;
@@ -293,10 +292,22 @@
                     line-height: 146.687%;
                 }
                 .instructions_card__content{
+                    max-width: 387px;
                     .instructions_card__image{
                         max-width: 61px;
                         max-height: 58px;
                         margin-bottom: 29px;
+                    }
+                    .instructions_card_block{
+                        @include dFlex(space-between, start);
+                        flex-direction: column;
+                        min-height: 310px;
+                        .instructions_card__title{
+                            margin: 0;
+                        }
+                        .instructions_card__subtitle{
+                            margin: 0;
+                        }
                     }
                     .instructions_card__title{
                         padding: 7px 12px;
@@ -306,6 +317,13 @@
                         font-weight: 700;
                         line-height: normal;
                         margin-bottom: 19px;
+                        .instructions_card__number{
+                            display: none;
+                            color: #000;
+                            font-size: 24px;
+                            font-weight: 500;
+                            line-height: 146.687%;
+                        }
                     }
                     .instructions_card__subtitle{
                         color: var(--Gray-2, #4F4F4F);
@@ -393,13 +411,16 @@
     }
     .instagram{
         padding: 92px 0 50px 0;
+        .custom-gap{
+            gap: 1.5rem;
+        }
         .instagram_logo{
             width: 255px;
             height: 72px;
             margin-bottom: 30px;
         }
         .instagram_card__container{
-            margin: auto;
+            
             .instagram_card{
                 max-width: 417px;
                 max-height: 417px;
@@ -474,8 +495,7 @@
                             height: 17px;
                             margin-right: 10px;
                             vertical-align: middle;
-                        }
-    
+                        }    
                     }
                     .catalog_form__btn{
                         padding: 25px 85px;
@@ -492,7 +512,6 @@
                             color: #000;
                         }
                     }
-    
                 }
             }
         }
@@ -546,10 +565,13 @@
             margin: auto;
         }
         &--mob2{
-            display: block;
+            display: none;
             margin: auto;
             background-color: #4F4F4F;
             margin-bottom: 16px;
+        }
+        &--mob3{
+            display: none;
         }
     }
 }
